@@ -1,0 +1,124 @@
+ul {
+    list-style-type: none;
+    margin: 5% 3%;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li p {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li p:hover {
+    background-color: #111;
+  }
+  #fondo{
+    background-color: #FFCAD4;
+    padding: 0% 4%;
+    min-height: 100%;
+  }
+  #col1{
+    background-color: rgb(223, 223, 223);  
+  }
+  #myDiv{
+    position:absolute;
+    top:50px;
+    right:10%;
+    max-height: 70%;
+  }
+  #myInput{
+    position:absolute;
+    top:10px;
+    right:10%;
+    max-width: 30%;
+    max-height: 40px;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  
+  .hidden {
+    /* new ruleset for hiding elements */
+    display: none;
+  }
+  
+  #myInput {
+    /* background-image: url('/css/searchicon.png'); */
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+  }
+  
+  #myUL {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #myUL li a {
+    border: 1px solid #ddd;
+    margin-top: -1px;
+    /* Prevent double borders */
+    background-color: #f6f6f6;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    display: block
+  }
+  
+  #myUL li a:hover:not(.header) {
+    background-color: #fff;
+  }
+
+
+  .vertical-menu {
+    width: 30%; /* Set a width if you like */
+  }
+  
+  .vertical-menu a {
+    background-color: #eee; /* Grey background color */
+    color: black; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+  }
+  
+  .vertical-menu a:hover {
+    background-color: #ccc; /* Dark grey background on mouse-over */
+  }
+  
+  .vertical-menu a.active {
+    background-color: #04AA6D; /* Add a green color to the "active/current" link */
+    color: white;
+  }
+
+  .buttom {
+    border-radius: 0.2cm;
+    background-color: #F72585;
+    width: 150px;
+    color: white;
+  }
+
+  .descript {
+    font-size: 74 cm;
+  }
+
+/* Solid border */
+hr.solid {
+  border-top: 2px solid black;
+}

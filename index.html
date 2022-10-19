@@ -1,0 +1,167 @@
+<html>
+
+<head>
+  <title>MENÚ</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body class="main-header">
+  <div id="fondo">
+    <div class="row">
+      <div class="col"><h1 style="color: black; text-align: left;">G2 Shopping</h1></div>
+      <div class="col"></div>
+    </div>
+
+      <!--           FRONT             -->
+    <div id="front" >
+        <div class="row" style="margin-top: 10%; margin-left: 10%;">
+          <div class="col-8"> <h4>G2Shopping te ayuda a tomar la mejor decisión a la hora de comprar productos de botillería según tus preferencias...</h4></div>
+          <div class="col-2" style="padding-left: 10%;"> <button class="buttom" onclick="ir_productos()">Productos</button> </div>
+        </div>
+        <div style="padding: 2% 25%; background-color: white; margin-top: 4%;">
+          <p style="font-size: 25;"> Te muestra las diferentes opciones para comprar los productos de tu lista en las tiendas Jumbo, Líder y Líquidos</p>
+        </div>
+        <div class="row" style="margin-left: 15%; margin-top: 2%">
+          <div class="col"> <img src="lider.png" style="width: 55%; padding-top: 10%;"> </div>
+          <div class="col"> <img src="jumbo.png" style="width: 40%; "> </div>
+          <div class="col"> <img src="liquidos.png" style="width: 55%; padding-top: 13%;"> </div>
+        </div>
+        <hr class="solid">
+        <div style="margin-left: 45%;">
+          <img src="cesta_cs.png" style="width: 8%; ">
+          <img src="cornershop.png" style="width: 15%; margin-left: 2%; ">
+        </div>
+    </div>
+
+    <!--           PRODUCTOS             -->
+    <div id="productos">
+      <div class="row">
+        <h3 style="text-align: center; margin: 2% 0%">Productos</h3>
+        <div class="col" style="width: 25%; height: 460px; border-radius: 0.5cm; background-color: white; margin: 0% 2%; padding: 3%;"> 
+          <br>
+          <img src="corona.png" width="40%" height="35%" style="margin: 0% 32%;">
+          <br><br>
+          <p> Corona</p>
+          <h4 class="decript" >Pack 6 un. Cerveza Corona Rubia botella 330 cc </h4>
+          <br><br>
+          <button class="buttom" style="color: white; margin: 0% 32%;">Agregar</button>
+        </div>
+        
+        <div class="col" style="width: 25%; height: 460px; border-radius: 0.5cm; background-color: white; margin: 0% 2%; padding: 3%;"> 
+          <br>
+          <img src="pisco.png" width="45%" height="35%" style="margin: 0% 32%;">
+          <br><br>
+          <p> Alto del Carmen</p>
+          <h4 class="decript" >Pisco especial 35º botella 750 cc</h4>
+          <br><br>
+          <button class="buttom" style="color: white; margin: 0% 32%;">Agregar</button>
+        </div>
+
+        <div class="col" style="width: 25%; height: 460px; border-radius: 0.5cm; background-color: white; margin: 0% 2%; padding: 3%;"> 
+          <br>
+          <img src="cocacola.png" width="20%" height="35%" style="margin: 0% 32%;">
+          <br><br>
+          <p> Coca Cola</p>
+          <h4 class="decript" >Bebida Coca-Cola sin azúcar 1,5L</h4>
+          <br><br>
+          <button class="buttom" style="color: white; margin: 0% 32%;">Agregar</button>
+        </div>
+        <div style="height: 20px; margin-bottom: 3%;"></div>
+        <button  class="buttom" style="width: 20%; margin-left: 27%; margin-right: 5%;" onclick="ir_front()">Volver</button>
+        <button class="buttom" style="width: 20%;" onclick="ir_lista()">Ir a lista</button>
+      </div>
+    </div>
+
+
+    <!--           LISTA             -->
+    <div id="lista">
+      <div>
+          <h1 style="color: black; text-align: center;"> Lista</h1>
+          <div style="background-color: white; margin-left: 15%; margin-right: 15%; height: 70%; margin-top: 1%; border-radius: 0.5cm; padding-top: 2%;">
+            <div class="row">
+              <div class="col-3" style="padding-left: 10%;"><img src="corona.png" style="width: 60%;"></div>
+              <div class="col-6" style="padding: 3% 0%"> <p style="font-size: 20px;" >Pack 6 un. Cerveza Corona Rubia botella 330 cc </p></div>
+              <div class="col-1"><img src="basurero.png" style="width: 50%; margin-top: 50%;"></div>
+            </div>
+            <hr class="solid">
+            <div class="row">
+              <div class="col-3" style="padding-left: 10%;"><img src="pisco.png" style="width: 60%;"></div>
+              <div class="col-6" style="padding: 3% 0%"> <p style="font-size: 20px;" >Pisco especial 35º botella 750 ccc </p></div>
+              <div class="col-1"><img src="basurero.png" style="width: 50%; margin-top: 50%;"></div>
+            </div>
+            <hr class="solid">
+            <div class="row">
+              <div class="col-3" style="padding-left: 10%;"><img src="cocacola.png" style="width: 40%; height: 55%;"></div>
+              <div class="col-6" style="padding: 3% 0%"> <p style="font-size: 20px;" >Bebida Coca-Cola sin azúcar 1,5L</p></div>
+              <div class="col-1"><img src="basurero.png" style="width: 50%; margin-top: 50%;"></div>
+            </div>
+            <hr class="solid">
+          </div>
+
+          <div style="height: 20px; margin-bottom: 2%;"></div>
+        <button  class="buttom" style="width: 20%; margin-left: 27%; margin-right: 5%;" onclick="ir_productos()">Volver</button>
+        <button class="buttom" style="width: 20%;" onclick="ir_lista_optimizada()">Ver lista optimizadas</button>
+      </div>
+    </div>
+
+
+    <!--           LISTA OPTIMIZADA             -->
+    <div id="lista_optimizada">
+      <div class="row">
+          <h1 style="color: black; text-align: center;"> Lista Optimizada</h1>
+          <button onclick="ir_lista()">Volver</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+
+
+
+
+
+
+                   
+
+<script>
+
+  $("#front").show()
+  $("#productos").hide()
+  $("#lista").hide()
+  $("#lista_optimizada").hide()
+
+
+  function ir_front() {
+    $("#front").show()
+    $("#productos").hide()
+    $("#lista").hide()
+    $("#lista_optimizada").hide()
+  }
+
+  function ir_productos() {
+    $("#front").hide()
+    $("#productos").show()
+    $("#lista").hide()
+    $("#lista_optimizada").hide()
+  }
+  function ir_lista() {
+    $("#front").hide()
+    $("#productos").hide()
+    $("#lista").show()
+    $("#lista_optimizada").hide()
+  }
+
+  function ir_lista_optimizada() {
+    $("#front").hide()
+    $("#productos").hide()
+    $("#lista").hide()
+    $("#lista_optimizada").show()
+  }
+
+</script>
